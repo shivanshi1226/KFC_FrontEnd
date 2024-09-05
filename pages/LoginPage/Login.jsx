@@ -89,7 +89,7 @@ const Login = () => {
         </p>
         <button type="submit" className="signup-button">Submit</button>
         <p className="signup-or">or</p>
-        <Link to="/cart"><button className="signup-guest-button">Skip, Continue As Guest</button></Link>
+        <Link to="/menu"><button className="signup-guest-button">Skip, Continue As Guest</button></Link>
       </form>
     </div>
   );

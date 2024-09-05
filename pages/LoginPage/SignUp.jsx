@@ -94,7 +94,7 @@ const SignUp = () => {
         <Link to="/sign-in">
           <button className="signup-guest-button">Login</button>
         </Link>
-        <Link to="/cart"><button className="signup-guest-button">Skip, Continue As Guest</button></Link>
+        <Link to="/menu"><button className="signup-guest-button">Skip, Continue As Guest</button></Link>
       </form>
     </div>
   );
