@@ -1,0 +1,142 @@
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #0b0b0b;
+  font-weight: 700;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.offer-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  background-color: #fff;
+  position: relative; 
+}
+
+.offer-featured {
+  padding: 0; 
+}
+
+.offer-featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.dealButton {
+  background-color: white;
+  color: black;
+  padding: 10px 70px;
+  border: 1px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dealButton:hover {
+  background-color: black;
+  color: white;
+}
+
+.offer-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.offer-image {
+  width: 100%;
+  height: 50%;
+  display: block;
+}
+
+.offer-title {
+  margin: 15px 10px;
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: 600;
+}
+
+.offer-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.no-deals {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 20px;
+}
+
+.offer-header{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 700px;
+}
+
+.load-more-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.loadMoreButton {
+  background-color: white;
+  color: black;
+  padding: 16px 60px;
+  border: 1px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.loadMoreButton:hover {
+  background-color: black;
+  color: white;
+}
+
+.load-more-container p {
+  font-size: 1rem;
+  font-weight:bolder;
+  color: #555;
+}
+
+.offer-details {
+  display: flex;
+  justify-content: space-between; /* Distributes space between the children */
+  align-items: center; /* Centers the items vertically */
+  margin-top: 20px; /* Adjusted margin */
+}
+
+.offer-details p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}

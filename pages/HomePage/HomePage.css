@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+  background-color: #343a40;
+  padding: 0.7rem 0;
+}
+
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 1rem; /* Space between logo and CTA section */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cta-text {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.cta-button {
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 4rem;
+  border-radius: 1.75rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+/* Banner Styles */
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000000; /* Set banner background color to black */
+  margin: 0; /* Ensure no margin around banner */
+  padding: 0; /* Ensure no padding around banner */
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Content Styles */
+.constant-page {
+  padding-top: 140px; /* Adjust this value based on the combined height of Header1 and Header2 */
+}
+
+.main-content {
+  max-width: 3000px;
+  margin: 0 auto;
+  padding: 0; /* Remove padding to ensure no gap */
+  background-color: #ffffff; /* White background */
+}
+
+/* Header1 and Header2 Styles */
+.header1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header2 {
+  position: fixed;
+  top: 60px; /* Adjust this value based on the height of Header1 */
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .constant-page {
+    padding-top: 120px; /* Adjust for smaller screens */
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta {
+    margin-top: 1rem;
+  }
+}

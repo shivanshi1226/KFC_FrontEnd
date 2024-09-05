@@ -1,0 +1,88 @@
+.exclusive-offers-container {
+  padding: 30px 50px 80px 50px;
+  background-color: #000; /* Set background to black */
+}
+
+.offer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.offer-grid {
+  padding: 20px 0;
+}
+
+.offer-card {
+  background-color: #1c1c1c;
+  width: 90%;
+  height: 40%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.offer-image {
+  width: 70%; 
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  padding-top: 10px;
+}
+
+.offer-content {
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offer-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff; /* White text color */
+  margin-bottom: 5px;
+}
+
+.offer-description {
+  font-size: 16px;
+  color: #bbb; /* Light gray for the description */
+}
+
+.offer-actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  width: 100%;
+}
+
+.offer-button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 48%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .offer-card {
+    width: auto;
+  }
+
+  .offer-button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}

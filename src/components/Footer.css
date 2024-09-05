@@ -1,0 +1,74 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.footer {
+  background-color: #343a40; 
+  color: #ffffff; /* White text color */
+  border-top: 1px solid #dee2e6; /* Light border at the top */
+  padding: 2rem 0; /* Padding for spacing */
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Footer specific styles */
+.footer .nav {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer .nav-item h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer .nav-link {
+  color: #ffffff; /* White text color */
+  text-decoration: none;
+  font-weight: bold; /* Bold text */
+  margin-bottom: 0.5rem;
+}
+
+.footer .nav-link:hover {
+  color: #007bff; /* Primary color on hover */
+}
+
+.footer .nav-item img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.footer .nav-item img:first-of-type {
+  width: 100px; /* Larger size for the first image */
+}
+
+.footer .nav-item img:last-of-type {
+  width: 80px; /* Size for the last two images */
+}
+
+.footer .container {
+  max-width: 1200px; /* Limit the width for larger screens */
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribute space between columns */
+}
+
+.footer .col-md-2 {
+  flex: 1; /* Flex-grow to make columns equal width */
+  margin-bottom: 1.5rem; /* Space below each column */
+}
