@@ -11,7 +11,7 @@ const Cart = () => {
   const { items, status, error } = useSelector((state) => state.cart);
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
+    const token = localStorage.getItem("accessToken");
     if (!token) {
       navigate("/sign-in");
     } else {
