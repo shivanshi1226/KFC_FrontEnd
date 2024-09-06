@@ -28,7 +28,7 @@ const Login = () => {
         localStorage.setItem('refreshToken', data.refreshToken);
 
         setTimeout(() => {
-          navigate("/cart"); 
+          navigate("/menu"); 
         }, 1000);
       } else {
         const data = await response.json();
